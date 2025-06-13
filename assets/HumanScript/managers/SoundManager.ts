@@ -71,6 +71,7 @@ export class SoundManager<E_BGM, E_SFX> extends Component {
 
     onLoad() {
        SoundManager.Inst = this;
+       console.log("SoundManager onLoad");
     }
 
     public async init() {
