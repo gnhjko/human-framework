@@ -1,0 +1,41 @@
+{
+    "$schema": "./@types/schema/package/index.json",
+    "package_version": 2,
+    "name": "human-framework",
+    "version": "1.0.0",
+    "author": "khjj07",
+    "editor": ">=3.8.6",
+    "scripts": {
+        "preinstall": "node ./scripts/preinstall.js",
+        "build": "tsc",
+        "watch": "tsc -w"
+    },
+    "description": "i18n:human-framework.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@cocos/creator-types": "^3.8.6",
+        "@types/node": "^18.17.1",
+        "typescript": "^5.8.2"
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:human-framework",
+                "label": "i18n:human-framework.show_log",
+                "message": "show-log"
+            }
+        ],
+        "asset-db": {
+            "mount": {
+                "path": "./assets"
+            }
+        },
+        "messages": {
+            "show-log": {
+                "methods": [
+                    "showLog"
+                ]
+            }
+        }
+    }
+}
